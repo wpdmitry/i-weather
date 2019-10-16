@@ -1,0 +1,58 @@
+.day-weather-item {
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_state {
+    width: 100%;
+
+    &_cloudy {
+      background-color: var(--cloudy-weather-color);
+    }
+
+    &_snow {
+      background-color: var(--snow-weather-color);
+    }
+
+    &_rain {
+      background-color: var(--rain-weather-color);
+    }
+
+    &_clear {
+      background-color: var(--clear-weather-color);
+    }
+  }
+
+  &__wrapper {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__weekday-name {
+    margin-bottom: 4px;
+  }
+
+  &__date {
+    font-size: 0.85rem;
+  }
+
+  &__spacer {
+    flex: 1 0;
+  }
+
+  &__temperature {
+    display: inline-flex;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+}

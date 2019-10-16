@@ -1,0 +1,53 @@
+.loader {
+  width: 100%;
+
+  &__content {
+    border-style: solid;
+    border-radius: 50%;
+    border-color: var(--primary-color) var(--primary-color) transparent transparent;
+    animation: spinner 0.8s infinite linear;
+    margin: 0 auto;
+
+    &_size {
+      &_xs {
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
+      }
+
+      &_xsmax {
+        width: 20px;
+        height: 20px;
+        border-width: 2px;
+      }
+
+      &_s {
+        width: 30px;
+        height: 30px;
+        border-width: 2px;
+      }
+
+      &_m {
+        width: 45px;
+        height: 45px;
+        border-width: 3px;
+      }
+
+      &_l {
+        width: 4rem;
+        height: 4rem;
+        border-width: 4px;
+      }
+    }
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

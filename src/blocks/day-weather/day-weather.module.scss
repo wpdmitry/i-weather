@@ -1,0 +1,51 @@
+.day-weather {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    &_state {
+      width: 100%;
+
+      &_cloudy {
+        background-color: var(--cloudy-weather-color);
+      }
+
+      &_snow {
+        background-color: var(--snow-weather-color);
+      }
+
+      &_rain {
+        background-color: var(--rain-weather-color);
+      }
+
+      &_clear {
+        background-color: var(--clear-weather-color);
+      }
+    }
+  }
+
+  &__icon {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  &__temperature {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  &__time {
+    margin-bottom: 4px;
+  }
+}
